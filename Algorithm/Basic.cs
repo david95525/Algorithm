@@ -5,8 +5,7 @@ namespace Algorithm
     {
         public static void Fibonacci_Algorithm()
         {
-            WriteLine("Hello, World!");
-            Write("請輸入一個整數:");
+            WriteLine("請輸入一個整數:");
             string? str = ReadLine();
             int num = Int32.Parse(str);
             if (num < 0)
@@ -18,7 +17,8 @@ namespace Algorithm
                 int[] output = new int[num + 1];
                 int result = Fibonacci(num);
                 int result2 = Fibonacci_DP(num, output);
-                WriteLine($"Fibonacci({num})={result},{result2}\n");
+                WriteLine($"Fibonacci({num}) = {result}");
+                WriteLine($"Fibonacci({num}) = {result2} by Dynamic");
             }
         }
         private static  int Fibonacci(int n)
